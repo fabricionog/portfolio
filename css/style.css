@@ -1,0 +1,244 @@
+/*
+css/style.css
+Folhas de estilo do template.
+ 
+Paleta:
+  --green:       #44ba44  (destaque principal — usado com moderação)
+  --green-light: #9ddb9d  (destaque suave / hover)
+  --black:       #0d0d0d  (fundo principal)
+  --dark:        #161616  (fundo de cards/blocos)
+  --gray:        #1f1f1f  (fundo secundário)
+  --text:        #c9c9c9  (texto principal)
+*/
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #44ba44;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9ddb9d;
+}
+
+H1,
+H2,
+H3,
+H4,
+H5,
+H6,
+p {
+    margin: 0;
+    padding: .8rem 0;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #c9c9c9;
+}
+
+/* sticky footer */
+#wrap {
+    min-height: 100%;
+    position: relative;
+}
+
+/* Define a largura do conteúdo dos containers */
+.limit {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* Cabeçalho da página */
+#wrap>header {
+    background-color: #161616;
+    border-bottom: 2px solid #44ba44;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.header img {
+    display: block;
+}
+
+.header h1 {
+    color: #44ba44;
+    font-size: 2rem;
+}
+
+.header form {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header form input,
+.header form button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: .5rem;
+}
+
+.header form input {
+    border-radius: .4rem 0 0 .4rem;
+    background-color: #1f1f1f;
+    color: #c9c9c9;
+    border: 1px solid #2a2a2a;
+}
+
+.header form button {
+    border-radius: 0 .4rem .4rem 0;
+    background-color: #44ba44;
+    color: #0d0d0d;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background .2s;
+}
+
+.header form button:hover {
+    background-color: #9ddb9d;
+}
+
+/* Menu principal */
+#wrap>nav {
+    background-color: #111111;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: end;
+    border-top: 1px solid #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.nav a {
+    padding: .8rem;
+    color: #c9c9c9;
+    transition: .25s;
+    font-size: .85rem;
+    letter-spacing: .05em;
+}
+
+.nav a:hover {
+    background-color: #1f1f1f;
+    color: #44ba44;
+}
+
+.nav a:first-child {
+    margin-right: auto;
+}
+
+/* Conteúdo principal */
+#wrap>main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.main {
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+}
+
+.main>section {
+    padding: 0 1rem;
+    color: #c9c9c9;
+}
+
+.main>aside {
+    background-color: #111111;
+    padding: 0 1rem;
+    border-top: 3px dotted #44ba44;
+    color: #c9c9c9;
+}
+
+/* Rodapé */
+#wrap>footer {
+    background-color: #111111;
+    border-top: 2px solid #44ba44;
+    color: #888888;
+    text-align: center;
+    padding: .75rem;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0;
+    border-bottom: 1px dotted #2a2a2a;
+}
+
+.footer-top a {
+    font-size: 1.5rem;
+    color: #888888;
+    padding: 0 .5rem;
+    transition: color .2s;
+}
+
+.footer-top a:hover {
+    color: #44ba44;
+}
+
+.footer-botton {
+    display: flex;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.footer-botton ul {
+    margin-top: 0;
+    line-height: 1.5rem;
+    list-style: none;
+}
+
+.footer-botton a {
+    color: #888888;
+    padding: 0 .5rem;
+    transition: color .2s;
+}
+
+.footer-botton a:hover {
+    color: #44ba44;
+}
+
+/* Larguras de telas MD+ */
+@media screen and (min-width: 768px) {
+
+    .main {
+        flex-direction: row;
+    }
+
+    .main>aside {
+        border-top: none;
+        border-left: 3px dotted #44ba44;
+        min-width: 220px;
+        max-width: 220px;
+    }
+
+}
