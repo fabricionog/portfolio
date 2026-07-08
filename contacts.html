@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <title>portfolio</title>
     <link rel="shortcut icon" href="img/download.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -38,18 +39,48 @@
         </nav>
 
         <main>
-            <div class="main">
-                <section>
-                    <h2>Título da Coisa</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum sequi atque doloribus nemo
-                        temporibus
-                        aliquid numquam architecto quas eligendi, possimus quis voluptates, mollitia veniam corrupti
-                        iste
-                        veritatis non, saepe aliquam?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id dignissimos nemo totam
-                        quibusdam
-                        doloremque illo eum explicabo, facere ut eveniet unde! Repudiandae unde aliquid laborum cumque
-                        reprehenderit asperiores nesciunt?</p>
+            <div class="main limit contacts">
+                <section > 
+
+                    <h2>Faça Contato</h2>
+                    <p>Preencha todos os campos do formulário abaixo para entrar em contato com a equipe do site.</p>
+                    <p class="center red">Todos os campos obrigatórios</p>
+
+                    <form action="#" method="post">
+
+                        <p>
+                            <label for="contactName">Seu nome:</label>
+                            <input type="text" name="contact_name" id="contactName" required minlength="2"
+                                maxlength="255" placeholder="Preencha seu nome social">
+                        </p>
+
+                        <p>
+                            <label for="contactEmail">Seu e-mail:</label>
+                            <input type="email" name="contact_email" id="contactEmail" required
+                                placeholder="Seu e-mail principal">
+                        </p>
+
+                        <p>
+                            <label for="contactSubject">Assunto do contato:</label>
+                            <input type="text" name="contact_subject" id="contactSubject" required minlength="3"
+                                maxlength="255" placeholder="Assunto do contato">
+                        </p>
+
+                        <p>
+                            <label for="contactMessage">Mensagem:</label>
+                            <textarea name="contact_message" id="contactMessage" required minlength="4"
+                                maxlength="2048" placeholder="Digite sua mensagem aqui"></textarea>
+                        </p>
+
+                         <p>
+                            <button type="submit">Enviar</button>
+                            <span class="red small">&larr; Clique somente uma vez.</span>
+                        </p>
+                        &nbsp;
+                        
+                        
+                    </form>
+
                 </section>
 
                 <aside>

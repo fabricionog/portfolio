@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <title>portfolio</title>
     <link rel="shortcut icon" href="img/download.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -32,7 +33,6 @@
             <div class="nav limit">
                 <a href="index.html">Início</a>
                 <a href="contacts.html">Contatos</a>
-                <a href="cadastro.html">Cadastre-se</a>
                 <a href="about.html">Sobre</a>
             </div>
         </nav>
@@ -40,16 +40,55 @@
         <main>
             <div class="main">
                 <section>
-                    <h2>Título da Coisa</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum sequi atque doloribus nemo
-                        temporibus
-                        aliquid numquam architecto quas eligendi, possimus quis voluptates, mollitia veniam corrupti
-                        iste
-                        veritatis non, saepe aliquam?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id dignissimos nemo totam
-                        quibusdam
-                        doloremque illo eum explicabo, facere ut eveniet unde! Repudiandae unde aliquid laborum cumque
-                        reprehenderit asperiores nesciunt?</p>
+
+                    <h2>Cadastre-se></h2>
+                    <p>Preencha todos os campos para se cadastrar nessa plataforma</P>
+                    <Todos class="center red">Todos os campos obrigatórios</p>
+
+                        <form action="#" method="post">
+
+                            <p>
+                                <label for="registerName">Seu nome:</label>
+                                <input type="text" name="register_name" id="registerName" required minlength="2"
+                                    maxlength="255" placeholder="Preencha seu nome pessoal">
+                            </p>
+
+                            <p>
+                                <label for="registerEmail">Seu e-mail:</label>
+                                <input type="email" name="register_email" id="registerEmail" required
+                                    placeholder="Seu e-mail">
+                            </p>
+
+                            <p>
+                                <label for="registerBirthdate">Nascimento:</label>
+                                <input type="date" name="register_birthdate" id="registerBirthdate" required>
+                            </p>
+
+                            <p>
+                                <label for="registerPassword">Crie uma senha:</label>
+                                <input type="password" name="register_password" id="registerPassword" required
+                                    placeholder="Digite sua senha">
+                            </p>
+
+                            <p>
+                                <label for="registerPasswordConfirm">Confirme sua senha:</label>
+                                <input type="password" name="register_password_confirm" id="registerPasswordConfirm"
+                                    required placeholder="Digite novamente sua senha">
+                            </p>
+
+                            <p>
+                                <label for="registerTelephone">Telefone:</label>
+                                <input type="tel" pattern="\(\d{2}\)\d{4}-\d{5}" placeholder="(21)9999-99999"
+                                    title="Digite o telefone no formato (99)9999-99999">
+                            </p>
+
+                            <p>
+                                <button type="submit">Enviar</button>
+                                <span class="red small">&larr; Clique somente uma vez.</span>
+                            </p>
+
+                        </form>
+
                 </section>
 
                 <aside>

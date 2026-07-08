@@ -78,6 +78,7 @@ body {
 
 .header img {
     display: block;
+
 }
 
 .header h1 {
@@ -225,6 +226,20 @@ body {
 
 .footer-botton a:hover {
     color: #44ba44;
+}
+
+/* classes de uso geral */
+.center {
+    text-align: center;
+}
+
+.red {
+    color: #ff4d4d;
+}
+
+.small {
+    font-size: .75rem;
+
 }
 
 /* Larguras de telas MD+ */
