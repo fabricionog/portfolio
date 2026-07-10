@@ -1,0 +1,32 @@
+.mytable {
+    width: 95%;
+    margin: auto;
+    background-color: #333131;
+    border: none;
+    border-spacing: 0;
+}
+
+.mytable th,
+.mytable td {
+    padding: .5rem;
+    border: none;
+    text-align: center;
+}
+
+.mytable th {
+    background-color: #44ba44;
+    color: #0d0d0d;
+}
+
+.mytable tr:nth-child(even) {
+    background-color: #161616;
+}
+
+.mytable tr td:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+}
+
+.aside-sites {
+    line-height: 1.8;
+}
